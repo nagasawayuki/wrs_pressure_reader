@@ -2,13 +2,25 @@
 
 このプロジェクトは、圧力計の画像から圧力値を読み取るためのものです。画像処理と解析はPythonとOpenCVを使用して行われます。
 
-実行：python src/main.py
-
 ## アルゴリズム
 画像入力→グレースケール→ぼかし処理→メーターの円と中心座標取得→メーターの0を取得→針の座標取得→角度計算→メーター値出力
 
 ## プロジェクト構成
 仮想環境名　`wrs`
+
+### 仮想環境の構築
+```sh
+python3 -m venv wrs
+source wrs/bin/activate
+pip install -r requirements.txt
+```
+
+2回目以降は`source wrs/bin/activate`のみで実行で良い
+
+### 実行コマンド
+```sh
+python src/main.py
+```
 
 ## ファイルとディレクトリの説明
 
@@ -55,3 +67,4 @@
 
 ```bash
 pip install -r requirements.txt
+```
