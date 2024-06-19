@@ -86,3 +86,6 @@ data/output/
 *.bak
 *.tmp
 .DS_Store
+
+# 仮想環境ディレクトリを無視
+wrs/
